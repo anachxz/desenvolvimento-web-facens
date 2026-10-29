@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX- Consulta CEP</title>
+</head>
+<body>]
+    <h1>AJAX - Consulta CEP</h1>
+    <form>
+        <fieldset>
+            <legend>Consulta CEP</legend>
+            <label for="cep">Digite o CEP:</label>
+            <input type="text" id="cep" name="cep" maxlength="8">
+            <button type="button" onclick="pesquisar(event)">Consultar</button>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            
+            <legend>Endereço</legend>
+            <p class="carregar" style="color:red;"visibility: hidden;">
+                Carregando...
+            </p>
+
+            <p>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" readonly>
+            </p>
+
+            <p>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" readonly>
+            </p>
+
+            <p>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" readonly>
+            </p>
+
+        </fieldset>
+    </form>
+    
+</body>
+<script src="asynAwait.js"></script>
+</html>

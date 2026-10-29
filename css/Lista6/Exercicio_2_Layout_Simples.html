@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Layout</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .topo {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .topo a { color: white; margin: 0 12px; }
+        .lateral {
+            position: fixed;
+            top: 60px;
+            bottom: 45px;
+            left: 0;
+            width: 20%;
+            background: #555;
+            padding: 20px;
+        }
+        .lateral a { display: block; color: white; margin-bottom: 20px; }
+        .conteudo {
+            margin-left: 20%;
+            padding: 85px 30px 65px;
+        }
+        .rodape {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 45px;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 13px;
+        }
+        @media (max-width: 600px) {
+            .lateral { width: 30%; }
+            .conteudo { margin-left: 30%; padding: 85px 15px 65px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </div>
+    <div class="lateral">
+        <a href="#menu1">Menu 1</a>
+        <a href="#menu2">Menu 2</a>
+        <a href="#menu3">Menu 3</a>
+    </div>
+    <div class="conteudo" id="inicio">
+        <h1>Conteúdo principal</h1>
+        <p>Esta é a área de conteúdo da página.</p>
+    </div>
+    <div class="rodape">Meu site - 2026</div>
+</body>
+</html>

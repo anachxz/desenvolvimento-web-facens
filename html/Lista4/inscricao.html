@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição no Curso</title>
+</head>
+
+<body>
+
+    <h1>Formulário de Inscrição</h1>
+
+    <form action="#" method="post">
+
+        <h2>Dados do Aluno</h2>
+
+        <label>Nome:</label>
+        <input type="text" name="nome_aluno" required>
+        <br><br>
+
+        <label>Endereço:</label>
+        <input type="text" name="endereco">
+        <br><br>
+
+        <label>Bairro:</label>
+        <input type="text" name="bairro">
+        <br><br>
+
+        <label>Cidade:</label>
+        <input type="text" name="cidade">
+        <br><br>
+
+        <label>Número:</label>
+        <input type="number" name="numero">
+        <br><br>
+
+        <label>CEP:</label>
+        <input type="text" name="cep">
+        <br><br>
+
+        <label>Complemento:</label>
+        <input type="text" name="complemento">
+        <br><br>
+
+        <label>Estado:</label>
+        <select name="estado">
+            <option value="">Selecione</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+        <br><br>
+
+        <label>Telefone:</label>
+        <input type="tel" name="telefone">
+        <br><br>
+
+        <label>Celular:</label>
+        <input type="tel" name="celular_aluno" required>
+        <br><br>
+
+        <label>E-mail:</label>
+        <input type="email" name="email_aluno" required>
+        <br><br>
+
+        <label>Cor:</label>
+        <select name="cor" required>
+            <option value="">Selecione</option>
+            <option value="branca">Branca</option>
+            <option value="preta">Preta</option>
+            <option value="parda">Parda</option>
+            <option value="amarela">Amarela</option>
+            <option value="indigena">Indígena</option>
+        </select>
+
+
+        <h2>Dados do Pai</h2>
+
+        <label>Nome:</label>
+        <input type="text" name="nome_pai" required>
+        <br><br>
+
+        <label>Data de nascimento:</label>
+        <input type="date" name="nascimento_pai">
+        <br><br>
+
+        <label>Naturalidade:</label>
+        <input type="text" name="naturalidade_pai">
+        <br><br>
+
+        <label>Instrução:</label>
+        <input type="text" name="instrucao_pai">
+        <br><br>
+
+        <label>Profissão:</label>
+        <input type="text" name="profissao_pai">
+        <br><br>
+
+        <label>Celular:</label>
+        <input type="tel" name="celular_pai" required>
+        <br><br>
+
+        <label>E-mail:</label>
+        <input type="email" name="email_pai" required>
+        <br><br>
+
+        <label>CPF:</label>
+        <input type="text" name="cpf_pai" required>
+        <br><br>
+
+        <label>Responsável financeiro?</label>
+
+        <input type="radio" name="financeiro_pai" value="sim">
+        <label>Sim</label>
+
+        <input type="radio" name="financeiro_pai" value="nao">
+        <label>Não</label>
+
+        <br><br>
+
+
+        <h2>Dados da Mãe</h2>
+
+        <label>Nome:</label>
+        <input type="text" name="nome_mae" required>
+        <br><br>
+
+        <label>Data de nascimento:</label>
+        <input type="date" name="nascimento_mae">
+        <br><br>
+
+        <label>Naturalidade:</label>
+        <input type="text" name="naturalidade_mae">
+        <br><br>
+
+        <label>Instrução:</label>
+        <input type="text" name="instrucao_mae">
+        <br><br>
+
+        <label>Profissão:</label>
+        <input type="text" name="profissao_mae">
+        <br><br>
+
+        <label>Celular:</label>
+        <input type="tel" name="celular_mae" required>
+        <br><br>
+
+        <label>E-mail:</label>
+        <input type="email" name="email_mae" required>
+        <br><br>
+
+        <label>CPF:</label>
+        <input type="text" name="cpf_mae" required>
+        <br><br>
+
+        <label>Responsável financeiro?</label>
+
+        <input type="radio" name="financeiro_mae" value="sim">
+        <label>Sim</label>
+
+        <input type="radio" name="financeiro_mae" value="nao">
+        <label>Não</label>
+
+        <br><br>
+
+
+        <h2>Dados do Curso</h2>
+
+        <label>Nome do curso:</label>
+        <input type="text" name="curso" required>
+        <br><br>
+
+        <label>Data de ingresso:</label>
+        <input type="date" name="data_ingresso" required>
+        <br><br>
+
+        <label>Valor:</label>
+        <input type="number" name="valor" step="0.01" required>
+        <br><br>
+
+        <label>Quantidade de parcelas:</label>
+        <select name="parcelas" required>
+            <option value="">Selecione</option>
+            <option value="1">1 parcela</option>
+            <option value="2">2 parcelas</option>
+            <option value="3">3 parcelas</option>
+            <option value="4">4 parcelas</option>
+            <option value="5">5 parcelas</option>
+            <option value="6">6 parcelas</option>
+            <option value="10">10 parcelas</option>
+            <option value="12">12 parcelas</option>
+        </select>
+
+        <br><br>
+
+        <input type="submit" value="Salvar Inscrição">
+
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+
+</html>

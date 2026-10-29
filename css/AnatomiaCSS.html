@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia CSS</title>
+    <style>
+        /* Tipos de valores */
+        .exemplo{
+        /* por codigo */
+        background-color: #480380;
+        /* por nome */
+        color: white;
+        /* por porcentagem */
+        font-size: 50%;
+        /* unidade de medida */
+        font-size: 20px;
+        /* por codigo, unidade de medida e nome */
+        border: 2px solid #c061ff;
+        /* por função */
+        width: calc(100% - 20px);   
+
+        }
+        /* por pseudo-classe */
+        .exemplo:hover{
+            background-color: blue;
+        }
+        /* por pseudo-elemento */
+        .exemplo::first-letter{
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formas de aplicar valores nas propriedades css</h1>
+    <div class="exemplo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ea minus hic adipisci doloremque blanditiis nulla iure, reiciendis a rem dicta facere in doloribus, veniam beatae iusto placeat accusamus culpa.</p>
+    </div>
+</body>
+</html>

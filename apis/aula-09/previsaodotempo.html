@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - Previsão do Tempo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #7bd7d3, #9bbfe7);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .caixa {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #0002;
+            text-align: center;
+            width: 340px;
+            max-width: 85%;
+        }
+        h1 { font-size: 25px; }
+        fieldset { border: none; padding: 0; }
+        input { padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 11px; background: #36a953; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #27863e; }
+        #resultado { margin-top: 22px; font-size: 17px; }
+        .carregar { visibility: hidden; margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <h1>Consulta de Clima</h1>
+        <form>
+            <fieldset>
+                <label for="cidade">Digite o nome da cidade:</label><br><br>
+                <input type="text" id="cidade" name="cidade" placeholder="Ex.: Sorocaba">
+                <button type="submit" onclick="pesquisar(event)">Buscar Clima</button>
+            </fieldset>
+        </form>
+        <p class="carregar">Carregando...</p>
+        <div id="resultado" aria-live="polite"></div>
+    </div>
+    <script src="tempoAwait.js"></script>
+</body>
+</html>
