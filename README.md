@@ -2,6 +2,41 @@
 
 Exercícios e exemplos de estudo de **Ana Clara**, estudante de Análise e Desenvolvimento de Sistemas na FACENS. O repositório reúne fundamentos de JavaScript, construção de páginas com HTML e CSS, manipulação do DOM e consumo de APIs.
 
+## Em destaque: consulta de CEP com API
+
+Um exercício para entender como uma página busca dados de outro serviço e transforma a resposta em informação na tela.
+
+**Objetivo:** consultar um CEP e preencher endereço, bairro e estado sem recarregar a página.
+
+| Etapa | O que o código faz |
+| --- | --- |
+| Entrada | Lê o CEP digitado no formulário |
+| Requisição | Usa `fetch` para enviar uma consulta GET ao ViaCEP |
+| Resposta | Converte o retorno JSON em um objeto JavaScript |
+| Interface | Usa o DOM para preencher os campos com os dados recebidos |
+
+**Conceitos praticados:** HTML, JavaScript, requisições HTTP, JSON, funções assíncronas com `async/await` e manipulação do DOM.
+
+[Ver formulário](apis/aula-09/consultacep.html) · [Ver integração com a API](apis/aula-09/asynAwait.js) · [Comparar com a versão usando Promises](apis/aula-09/promise.js)
+
+### Como demonstrar
+
+1. Abra `apis/aula-09/consultacep.html` com Live Server.
+2. Digite um CEP válido com oito números e clique em **Consultar**.
+3. Observe o preenchimento dos campos.
+4. Nas ferramentas do navegador, abra a aba **Network/Rede** para visualizar a requisição e a resposta JSON.
+
+### Próximas melhorias
+
+A versão atual é um exercício inicial: verifica se o campo está vazio, mas ainda precisa tratar CEP inválido, CEP não encontrado e falhas de conexão. Também há ajustes de marcação HTML a fazer no indicador de carregamento. Esses pontos fazem parte da evolução prevista para o projeto.
+
+## Outros exercícios com APIs
+
+| Exercício | Prática | Código |
+| --- | --- | --- |
+| Previsão do tempo | Consulta por cidade, resposta em texto e tratamento de falhas | [JavaScript](apis/aula-09/tempoAwait.js) |
+| Cadastro de funcionários | Montagem de objeto, envio POST em JSON e resposta HTTP | [JavaScript](apis/aula-09/cadastroAwait.js) |
+
 ## Organização
 
 | Pasta | Conteúdo |
